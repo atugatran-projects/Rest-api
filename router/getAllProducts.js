@@ -49,6 +49,10 @@ const getAllProducts = async (req, res) => {
   res.status(200).json({ myData, nbHits: myData.length });
 };
 
+
+
+
+
 // Testing Function
 const getAllProductsTesting = async (req, res) => {
   console.log(req.query);

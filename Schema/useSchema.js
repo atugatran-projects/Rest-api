@@ -1,30 +1,30 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
-  name: {
+  Pname: {
     type: String,
     required: true,
   },
-  price: {
+  Pprice: {
     type: Number,
     required: [true, "price must be provided"],
   },
-  featured: {
+  Pfeatured: {
     type: Boolean,
     default: false,
   },
-  rating: {
+  Prating: {
     type: Number,
     default: 4.9,
   },
-  createdAt: {
+  PcreatedAt: {
     type: Date,
     default: Date.now(),
   },
-  company: {
+  Pcompany: {
     type: String,
     enum: {
-      values: ["apple", "samsung", "dell", "mi"],
+      values: ["apple", "samsung", "dell", "mi", "assus"],
       message: `{VALUE} is not supported`,
     },
   },
